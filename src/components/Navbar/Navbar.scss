@@ -5,19 +5,45 @@
     background-color: $navbar-background;
     height: 70px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 14px 0;
+    @include tablet {
+        
+        justify-content: flex-end;
+        gap: 35px;
+        padding-right: 30px;
+        align-items: center;
+    }
+   
+
+    // &__heading{
+        
+       
+    // }
 
     &__links{
         @include mobile {
             display: none;
-            border: 3px solid orange;
         }
+        @include tablet{
             text-decoration: none;
             color: $main-text;
             display: flex;
             align-items: center;
             cursor: pointer;
+            z-index: 20;
+            font-size: 20px;
+
+            @include desktop{
+                font-size: 24px;
+            }
+
+            &:hover{
+                color: #B4498C;
+                border-bottom: 3px solid #B4498C;
+                padding-bottom: 4px;
+            }
+           
+        }
+           
     }
 }
 
