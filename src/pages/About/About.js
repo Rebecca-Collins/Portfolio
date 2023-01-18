@@ -5,8 +5,8 @@ function About() {
   return (
     <section className="about">
       <h1 className="about__heading">About Me</h1>
-      <div>
-      <div>
+      <div className="about__text-container">
+      <div className="about__text-content">
         <p className="about__text">
           As a recent graduate in Software Engineering, I am seeking to leverage
           my skills and passion within the industry. I possess a solid
@@ -16,7 +16,7 @@ function About() {
           reusable and visually pleasing websites and applications.
         </p>
       </div>
-      <div>
+      <div className="about__text-content">
         <p className="about__text">
           My experiences through various projects during my studies have honed
           my problem-solving aptitude, attention to detail and ability to
@@ -26,7 +26,7 @@ function About() {
           organization or project.
         </p>
       </div>
-      <div>
+      <div className="about__text-content">
         <p className="about__text">
           I am eager to take on challenging and innovative projects and to be a
           part of a progressive and forward-thinking company. I believe that my

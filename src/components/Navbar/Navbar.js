@@ -18,7 +18,7 @@ function Navbar() {
         </Link>
       {/* </h1> */}
       {/* <h1 className="navigation__heading"> */}
-        <Link className="navigation__links" to="/">
+        <Link className="navigation__links" to="/projects">
           Projects
         </Link>
       {/* </h1> */}
