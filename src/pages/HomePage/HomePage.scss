@@ -3,24 +3,24 @@
 
 //--- THIS IS THE CODE YOU WANT!!
 .home {
-//   background-image: url("../../assets/images/portfolio-img.jpeg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   height: 100vh;
-//   width: 100vw;
-//   background-position-x: 0%;
+  background-image: url("../../assets/images/portfolio-img.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-position-x: 0%;
 
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     background-color: rgba(0, 0, 0, 0.5);
-//     background-image: radial-gradient(circle at top left,rgba(102,51,153,.25),transparent);
-//     height: 100vh;
-//     width: 100%;
-//   }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient(circle at top left,rgba(102,51,153,.25),transparent);
+    height: 100vh;
+    width: 100%;
+  }
 
   &__text-container {
     padding: 20px 0 0 0;

@@ -4,7 +4,7 @@
 .burger-menu {
   position: relative;
   // cursor: pointer;
-  cursor: none;
+  // cursor: none;
   transition: all 0.2s ease-in-out;
   width: 30px;
   height: 30px;
@@ -22,7 +22,7 @@
     color: $main-text;
     font-weight: 400;
     font-size: 30px;
-     cursor: none;
+    //  cursor: none;
 
     &:hover{
         color: #B4498C;

@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import About from "./pages/About/About";
 import Navbar from "./components/Navbar/Navbar";
-import CustomCursor from "./components/CustomCurser/CustomCurser";
+// import CustomCursor from "./components/CustomCurser/CustomCurser";
 import Projects from "./pages/Projects/Projects";
 function App() {
   return (
     <BrowserRouter>
-    <CustomCursor/>
+    {/* <CustomCursor/> */}
      {/* <div className="custom-cursor"></div> */}
     <Navbar/>
     <Routes>

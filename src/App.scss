@@ -36,22 +36,22 @@
 //   }
 // }
 
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  pointer-events: none;
-}
+// .custom-cursor {
+//   width: 20px;
+//   height: 20px;
+//   background-color: #ffffff;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 9999;
+//   pointer-events: none;
+// }
 
-body:hover .custom-cursor {
-  opacity: 1; /* make the cursor visible on hover */
-}
+// body:hover .custom-cursor {
+//   opacity: 1; /* make the cursor visible on hover */
+// }
 //----ORIGNIAL---
 // body {
 //   overflow-x: hidden;
