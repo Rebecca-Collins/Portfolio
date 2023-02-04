@@ -3,6 +3,27 @@
 
 //--- THIS IS THE CODE YOU WANT!!
 .home {
+  // background-image: url("../../assets/images/portfolio-img.jpeg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // height: 100vh;
+  // width: 100vw;
+  // background-position-x: 0%;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  //   background-image: radial-gradient(circle at top left,rgba(102,51,153,.25),transparent);
+  //   height: 100vh;
+  //   width: 100%;
+  // }
+
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
   background-image: url("../../assets/images/portfolio-img.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -10,14 +31,19 @@
   height: 100vh;
   width: 100vw;
   background-position-x: 0%;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: radial-gradient(circle at top left,rgba(102,51,153,.25),transparent);
+    background-color: rgb(0 0 0 / 71%);
+    background-image: radial-gradient(
+      circle at top left,
+      rgb(102 51 153 / 36%),
+      transparent
+    );
     height: 100vh;
     width: 100%;
   }

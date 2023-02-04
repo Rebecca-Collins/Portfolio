@@ -3,16 +3,12 @@
 
 .burger-menu {
   position: relative;
-  // cursor: pointer;
+  cursor: pointer;
   // cursor: none;
   transition: all 0.2s ease-in-out;
   width: 30px;
   height: 30px;
 
-    // &:hover{
-
-    // }
-  
   @include tablet{
     display: none;
   }
@@ -25,8 +21,8 @@
     //  cursor: none;
 
     &:hover{
-        color: #B4498C;
-        border-bottom: 3px solid #B4498C;
+        color: $secondary-text;
+        border-bottom: 3px solid $secondary-text;
         padding-bottom: 8px;
     }
 }
@@ -40,6 +36,7 @@
     height: 100%;
     flex-direction: column;
     margin: 12px 0 0 10px;
+    cursor: pointer;
    
 
     &.open {

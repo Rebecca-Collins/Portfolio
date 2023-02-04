@@ -2,7 +2,9 @@
 @use "../../styles/responsive" as *;
 
 .navigation{
-    background-color: $navbar-background;
+    // rgb(39 4 58 / 93%);
+
+    background-color: #330a33fc;
     height: 70px;
     display: flex;
     @include tablet {
@@ -12,12 +14,6 @@
         padding-right: 30px;
         align-items: center;
     }
-   
-
-    // &__heading{
-        
-       
-    // }
 
     &__links{
         @include mobile {
@@ -28,8 +24,7 @@
             color: $main-text;
             display: flex;
             align-items: center;
-            // cursor: pointer;
-            // cursor: none;
+            cursor: pointer;
             z-index: 20;
             font-size: 20px;
 
@@ -38,8 +33,9 @@
             }
 
             &:hover{
-                color: #B4498C;
-                border-bottom: 3px solid #B4498C;
+                // color: #330a33fc;
+                color: $secondary-text;
+                border-bottom: 3px solid $secondary-text;
                 padding-bottom: 4px;
             }
            

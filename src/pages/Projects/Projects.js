@@ -7,10 +7,12 @@ import travelSite from "../../assets/images/3-copy.png";
 import oceanside from "../../assets/images/4-copy.png";
 import "./Projects.scss";
 
+import ProjectCards from "../../components/ProjectCards/ProjectCards";
+
 function Projects() {
   const [selectedProject, setSelectedProject] = useState("");
 
-  const handleClick = projectName => {
+  const handleClick = (projectName) => {
     setSelectedProject(projectName);
   };
 
@@ -22,105 +24,78 @@ function Projects() {
             Bringing Ideas to Life: A selection of my web development projects
             using modern technologies.
           </h1>
-          <div className="project__sub-container">
+          {/* <div className="project__sub-container">
             <p className="project__sub-heading">
               Back-end development using React, Node.js, Express, Knex and
               MYSQL.
             </p>
             <p className="project__sub-heading">
-              Front-end development with React, HTML5, CSS, SASS, and
+              Front-end development with React, HTML5, SASS, and
               JavaScript.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="project__container">
+          <ProjectCards
+            projectName="bandsite"
+            image={bandsite}
+            handleClick={handleClick}
+            projectTitle="Bandsite"
+            projectText="BandSite is a dynamic web platform designed for musical artists to showcase their talent and connect with fans. It offers users the ability to preview upcoming performances, listen to the band's music, and purchase tickets to shows directly from the site."
+            projectContent="Developed with, HTML, JavaScript DOM, Flexbox, SASS, BEM, and REST API "
+          />
 
-          <div className="project__content card">
-            <img
-              className="project__image"
-              src={bandsite}
-              alt="bandsite project"
-              onClick={() => handleClick("bandsite")}
-            />
-            {selectedProject === "bandsite" && (
-              <div className="overlay open">
-                <button onClick={() => setSelectedProject("")}>Close</button>
-              </div>
-            )}
-          </div>
+          <ProjectCards
+            projectName="brainflix"
+            image={brainflix}
+            handleClick={handleClick}
+            projectTitle="Brainflix"
+            projectText="Is a video streaming platform that lets you watch, upload, and share videos like YouTube. Create playlists and discover new content from creators across the world."
+            projectContent="Developed with, React, JavaScript, Axios, Node.js, SASS, BEM, REST API and Flexbox"
+          />
 
-          <div className="project__content card">
-            <img
-              className="project__image"
-              src={brainflix}
-              alt="brainflix project"
-              onClick={() => handleClick("brainflix")}
-            />
-            {selectedProject === "brainflix" && (
-              <div className="overlay open">
-                <button onClick={() => setSelectedProject("")}>Close</button>
-              </div>
-            )}
-          </div>
+          <ProjectCards
+            projectName="googleAccess"
+            image={googleAccess}
+            handleClick={handleClick}
+            projectTitle="Google Access"
+            projectText="The G-Access Toolbar lets you personalize accessibility settings in Google products and save them for use across all of them. It lets you adjust elements like text size and color contrast directly on the page."
+            projectContent="Developed with React, HTML5, BEM, SASS, Flexbox and JavaScript."
+          />
 
-          <div className="project__content card">
-            <img
-              className="project__image"
-              src={googleAccess}
-              alt="bandsite project"
-              onClick={() => handleClick("googleAccess")}
-            />
-            {selectedProject === "googleAccess" && (
-              <div className="overlay open">
-                <button onClick={() => setSelectedProject("")}>Close</button>
-              </div>
-            )}
-          </div>
+          <ProjectCards
+            projectName="travelSite"
+            image={travelSite}
+            handleClick={handleClick}
+            projectTitle="Travel Site"
+            projectText="Travel Site allows users to discover and plan their next travel adventure. It features a user-friendly interface, a variety of destinations and activities to choose from"
+            projectContent="Developed with, HTML5, BEM, Flexbox and SASS"
+          />
 
-          <div className="project__content card">
-            <img
-              className="project__image"
-              src={travelSite}
-              alt="bandsite project"
-              onClick={() => handleClick("travelSite")}
-            />
-            {selectedProject === "travelSite" && (
-              <div className="overlay open">
-                <button onClick={() => setSelectedProject("")}>Close</button>
-              </div>
-            )}
-          </div>
+          <ProjectCards
+            projectName="instock"
+            image={instock}
+            handleClick={handleClick}
+            projectTitle="Instock"
+            projectText="Instock, an inventory management system. Working in an agile environment, I collaborated with my team to prioritize and complete tasks using JIRA. Our goal was to deliver a functional and user-friendly platform that would allow users to manage their warehouse inventory efficiently and effectively."
+            projectContent="Developed with, JavaScript, HTML, SCSS, Flexbox, Axios, Knex, MYSQL, Express, Node.js"
+          />
 
-          <div className="project__content card">
-            <img
-              className="project__image"
-              src={instock}
-              alt="bandsite project"
-              onClick={() => handleClick("instock")}
-            />
-            {selectedProject === "instock" && (
-              <div className="overlay open">
-                <button onClick={() => setSelectedProject("")}>Close</button>
-              </div>
-            )}
-          </div>
-
-          <div className="project__content card">
-            <img
-              className="project__image"
-              src={oceanside}
-              alt="bandsite project"
-              onClick={() => handleClick("oceanside")}
-            />
-            {selectedProject === "oceanside" && (
-              <div className="overlay open">
-                <button onClick={() => setSelectedProject("")}>Close</button>
-              </div>
-            )}
-          </div>
-
+          <ProjectCards
+            projectName="oceanside"
+            image={oceanside}
+            handleClick={handleClick}
+            projectTitle="Oceanside United"
+            projectText="Oceanside United is a website for a local women's soccer team to connect the team with their community and potential sponsors. Key features include a user authentication, commenting system, responsive design, dynamic timestamps, and an API backend."
+            projectContent="Developed with,, JavaScript, HTML, SCSS, Flexbox, Axios, Knex, MYSQL, Express, and Node.js"
+          />
         </div>
+        {selectedProject !== "" && (
+          <div className="overlay open">
+            <button onClick={() => setSelectedProject("")}>Close</button>
+          </div>
+        )}
       </div>
     </section>
   );

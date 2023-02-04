@@ -1,0 +1,28 @@
+@use "./color" as *;
+
+
+//---- Mobile text display ----
+@mixin overylay-text{
+    color: $main-text;
+    font-size: 12px;
+    margin-top: 6px;
+    width: 266px;
+}
+
+@mixin overlay-buttons{
+    text-align: center;
+    width: 49px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-top: 7px;
+    cursor: pointer;
+    border: none;
+    height: 29px;
+}
+
+@mixin overylay-color-heading{
+    margin-top: 5px;
+    background-clip: text;
+    color: transparent;
+}
