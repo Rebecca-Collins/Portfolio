@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Navbar from "./components/Navbar/Navbar";
 // import CustomCursor from "./components/CustomCurser/CustomCurser";
 import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/projects" element={<Projects/>}/>
+      <Route path="/contact" element={<Contact/>}/>
     </Routes>
     </BrowserRouter>
      

@@ -55,10 +55,10 @@
 
   &__text {
     position: relative;
-    // color: #59a8d6;
+    //  color: #59a8d6;
     color: #9ec759;
-    font-size: 28px;
-    font-weight: 300;
+    font-size: 36px;
+    font-weight: 400;
   }
 
   &__subheading-container {
@@ -76,10 +76,24 @@
   &__paragraph{
     color: $main-text;
     position: relative;
-    font-size: 10px;
+    font-size: 12px;
     width: 190px;
-    margin-top: 10px;
-    line-height: 14px;
+    margin: 11px 0px;
+    line-height: 16px;
+    // margin-top: 21px;
+    // line-height: 14px;
+  }
 
+  &__link{
+    color: $secondary-text;
+    position: relative;
+    text-decoration: none;
+  }
+
+  &__chevron-img{
+    position: absolute;
+    width: 31px;
+    top: -5px;
+    left: 77px;
   }
 }

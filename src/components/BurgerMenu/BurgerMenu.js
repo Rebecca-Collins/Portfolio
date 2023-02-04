@@ -56,7 +56,7 @@ function BurgerMenu() {
           </h1>
 
           <h1>
-            <Link className="burger-menu__links" to="/">
+            <Link className="burger-menu__links" to="/contact">
               Contact
             </Link>
           </h1>
