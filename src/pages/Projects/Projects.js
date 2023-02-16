@@ -17,23 +17,14 @@ function Projects() {
   };
 
   return (
-    <section>
-      <div className="project">
+    <section className="project background">
+      {/* <div className="project"> */}
         <div>
           <h1 className="project__heading">
-            Bringing Ideas to Life: A selection of my web development projects
-            using modern technologies.
+          Bringing Your Ideas to Life: A Showcase of My Expertise in Modern Web Development Technologies
+            {/* Bringing Ideas to Life: A selection of my web development projects
+            using modern technologies. */}
           </h1>
-          {/* <div className="project__sub-container">
-            <p className="project__sub-heading">
-              Back-end development using React, Node.js, Express, Knex and
-              MYSQL.
-            </p>
-            <p className="project__sub-heading">
-              Front-end development with React, HTML5, SASS, and
-              JavaScript.
-            </p>
-          </div> */}
         </div>
 
         <div className="project__container">
@@ -96,7 +87,7 @@ function Projects() {
             <button onClick={() => setSelectedProject("")}>Close</button>
           </div>
         )}
-      </div>
+      {/* </div> */}
     </section>
   );
 }

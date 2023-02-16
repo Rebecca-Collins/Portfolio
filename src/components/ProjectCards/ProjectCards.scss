@@ -3,21 +3,20 @@
 
 .project-card {
   position: relative;
+  margin: 2px;
 
   &__image {
     width: 100%;
     cursor: pointer;
   }
-
-  
 }
 
 .overlay {
-    animation: zoomIn 0.6s ease-in-out;
-    transform: scale(1);
-    transition: transform 0.6s ease-in-out;
-    // animation: fadeInUp 0.6s ease-in-out;
-//   animation: slideIn 0.6s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+  transition: visibility 0.5s ease-in-out, background 0.5s ease-in-out;
+  // animation: zoomIn 0.6s ease-in-out;
+  // transform: scale(1);
+  // transition: transform 0.6s ease-in-out;
   visibility: hidden;
   position: absolute;
   width: 100%;
@@ -37,37 +36,31 @@
   }
 
   &__text {
-    @include overylay-text;
+    @include overlay-text;
   }
 
-  &__details{
-    @include overylay-text;
+  &__details {
+    @include overlay-text;
   }
 
-//   &__title {
-//     color: $main-text;
-//   }
-
-  &__button-container{
+  &__button-container {
     display: flex;
     justify-content: space-between;
     width: 131px;
   }
 
-  &__view-button{
+  &__view-button {
     @include overlay-buttons;
-    }
+  }
 
   &__close-button {
     @include overlay-buttons;
   }
-
-  
 }
 
 .overlay.open {
   visibility: visible;
-  border: 2px solid #aaa1a1;
+  border: 1px solid #472552;
 }
 
 .card:nth-of-type(1) {
@@ -96,18 +89,19 @@
 }
 
 .bandsite {
-    margin-top: 5px;
-    color: #8E3C83;
-  }
-
-.brainflix{
-    margin-top: 5px;
-    color: #0095ff;
+  margin-top: 5px;
+  color: #8e3c83;
 }
-  
-.googleAccess{
-   @include overylay-color-heading;
-    background-image: linear-gradient(to right,
+
+.brainflix {
+  margin-top: 5px;
+  color: #0095ff;
+}
+
+.googleAccess {
+  @include overlay-color-heading;
+  background-image: linear-gradient(
+    to right,
     #4285f4 6%,
     #ea4335 8%,
     #fbbc05 16%,
@@ -115,48 +109,30 @@
     #34a853 25%,
     #ea4335 26%,
     #ffffff 35%
-    );
-    }
-
-.travelSite{
-    margin-top: 5px;
-    color: #ce8c47;
-}  
-
-.instock{
-    margin-top: 5px;
-    color: #004aad;
-    
+  );
 }
 
-.oceanside{
-    @include overylay-color-heading;
-    background-image: linear-gradient(to right,
-    #ffffff 41%,
-    #95e90e 50%
-    );
+.travelSite {
+  margin-top: 5px;
+  color: #ce8c47;
+}
+
+.instock {
+  margin-top: 5px;
+  color: #004aad;
+}
+
+.oceanside {
+  @include overlay-color-heading;
+  background-image: linear-gradient(to right, #ffffff 41%, #95e90e 50%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  @keyframes zoomIn {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
+  to {
+    opacity: 1;
   }
+}
 
-//   @keyframes slideIn {
-//     from {transform: translateY(100%); opacity: 0;}
-//     to {transform: translateY(0); opacity: 1;}
-//     }
-
-//   @keyframes appear {
-//     from {opacity: 0;}
-//     to {opacity: 1;}
-//     }
-
-// @keyframes fadeIn {
-//     from {background: rgba(0, 0, 0, 0);}
-//     to {background: rgba(0, 0, 0, 0.8);}
-//   }

@@ -2,7 +2,13 @@ import "./ProjectCards.scss";
 
 import { useState } from "react";
 
-function ProjectCards({ projectName, image, projectText, projectContent, projectTitle }) {
+function ProjectCards({
+  projectName,
+  image,
+  projectText,
+  projectContent,
+  projectTitle,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleViewButtonClick = () => {
@@ -20,12 +26,9 @@ function ProjectCards({ projectName, image, projectText, projectContent, project
       {isOpen && (
         <div className="overlay open">
           <div className="overlay__content">
-          <h1 className={`overlay__title ${projectName}`}>{projectTitle}</h1>
-            {/* <h1 className={`project-card card ${projectName}`}></h1> */}
-            {/* <h1 className="project-card__title">{projectTitle}</h1> */}
+            <h1 className={`overlay__title ${projectName}`}>{projectTitle}</h1>
             <p className="overlay__text">{projectText}</p>
             <p className="overlay__details">{projectContent}</p>
-
             <div className="overlay__button-container">
               <button
                 className="overlay__view-button"

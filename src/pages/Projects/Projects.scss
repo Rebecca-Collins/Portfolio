@@ -1,120 +1,91 @@
 @use "../../styles/color" as *;
 @use "../../styles/responsive" as *;
+@use "../../styles/mixins" as *;
 
-// .project {
-//   overflow-x: hidden;
-//   font-family: "Lato", sans-serif;
-//   background-image: url("../../assets/images/portfolio-img.jpeg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
+
+// .background{
 //   height: 100vh;
-//   width: 100vw;
-//   background-position-x: 0%;
-//   position: relative;
-//   // cursor: none;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     background-color: rgba(0, 0, 0, 0.5);
-//     background-image: radial-gradient(
-//       circle at top left,
-//       rgba(102, 51, 153, 0.25),
-//       transparent
-//     );
-//     height: 100vh;
-//     width: 100%;
-//   }
-//   &__heading {
-//     color: white;
+//     width: 100vw;
+//     background-color: rgb(0 0 0);
 //     position: relative;
-//     font-size: 34px;
-//     padding:10px 14px;
-//   }
 
-//   &__sub-container{
-//     padding:10px 14px;
-//   }
-
-//   &__sub-heading{
-//     color: $main-text;
-//     position: relative;
-//   }
-
-//   &__container {
-//     // background-color: rgb(144 58 112 / 95%);
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
-//     top: 400px;
-
-//   }
-
-//   &__content{
-//     position: relative;
-//   }
-
-//   &__image {
-//     width: 100%;
-//     cursor: pointer;
-//   }
-
-//   // &__instock-logo{
-//   //   position: absolute;
-//   //   left: 107px;
-//   //   top: 10px;
-//   //   width: 96px;
-//   // }
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       background-color: rgb(0 0 0 / 66%);
+//       background-image: linear-gradient(
+//         to top,
+//         rgb(102 51 153 / 23%),
+//         transparent
+//       );
+//       // height: calc(100% + 100vh); /* adjusts the height of the pseudo-element */
+//       // width: 100%;
+//     }
 // }
-
-// .overlay {
-//   transition: all 0.3s ease-in-out;
-//   transform: translateY(-100%);
-//   visibility: hidden;
-
-// }
-// .overlay.open {
-//   transform: translateY(0);
-//   visibility: visible;
-//   // display: flex;
-//   // background: rgba(0, 0, 0, 0.8);
-//   // position: relative;
-// }
-
-// @use "../../styles/color" as *;
-// @use "../../styles/responsive" as *;
 
 .project {
-  overflow-x: hidden;
-  font-family: "Lato", sans-serif;
-  background-image: url("../../assets/images/portfolio-img.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  background-position-x: 0%;
-  position: relative;
+  font-family: "Roboto Slab",serif;
+  // @include background-image;
+  // overflow-x: hidden;
+  // background-image: url("../../assets/images/portfolio-img.jpeg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // height: 100vh;
+  // width: 100vw;
+  // background-position-x: 0%;
+  // background-color: rgb(0 0 0);
+  // position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(0 0 0 / 71%);
-    background-image: radial-gradient(
-      circle at top left,
-      rgb(102 51 153 / 36%),
-      transparent
-    );
-    height: 100vh;
-    width: 100%;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgb(0 0 0 / 81%);
+  //   background-image: linear-gradient(
+  //     to top,
+  //     rgb(102 51 153 / 23%),
+  //     transparent
+  //   );
+  //   height: calc(100% + 100vh); /* adjusts the height of the pseudo-element */
+  //   width: 100%;
+  // }
+
+
+
+
+
+
+  // overflow-x: hidden;
+  // background-image: url("../../assets/images/portfolio-img.jpeg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // height: 100vh;
+  // width: 100vw;
+  // background-position-x: 0%;
+  // position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgb(0 0 0 / 71%);
+  //   background-image: radial-gradient(
+  //     circle at top left,
+  //     rgb(102 51 153 / 36%),
+  //     transparent
+  //   );
+  //   height: 100vh;
+  //   width: 100%;
+  // }
+
   &__heading {
-    color: white;
+    color: $main-text;
     position: relative;
     font-size: 34px;
     padding: 10px 14px;

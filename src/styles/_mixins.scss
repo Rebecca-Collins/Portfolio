@@ -1,8 +1,8 @@
 @use "./color" as *;
-
+@use "./responsive" as *;
 
 //---- Mobile text display ----
-@mixin overylay-text{
+@mixin overlay-text{
     color: $main-text;
     font-size: 12px;
     margin-top: 6px;
@@ -18,11 +18,27 @@
     margin-top: 7px;
     cursor: pointer;
     border: none;
-    height: 29px;
+    height: 25px;
+    border-radius: 2px;
 }
 
-@mixin overylay-color-heading{
+@mixin overlay-color-heading{
     margin-top: 5px;
     background-clip: text;
     color: transparent;
+}
+
+@mixin background-image{
+    overflow-x: hidden;
+    background-image: url("../../assets/images/portfolio-img.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-x:  -38%;
+
+    @include tablet {
+        background-size: contain;
+        background-position-x: 409px;
+        background-position-y: -49px;
+    }
 }

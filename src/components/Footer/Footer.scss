@@ -1,0 +1,38 @@
+@use "../../styles/color" as *;
+@use "../../styles/responsive" as *;
+@use "../../styles/mixins" as *;
+
+
+
+
+.footer{
+    font-family: "Roboto Slab",serif;
+    border-top: 1px solid #a1a1a1;
+    // background-color: yellow;
+    background-color: grey;
+    position: relative;
+    display: flex;
+    background-image: url("../../assets/images/texture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2.8125rem 0 3.75rem;
+    gap: 11px;
+
+    &__memoji{
+        height: 3.25rem; 
+    }
+
+    // &__content{
+    //     // margin-right: 15px;
+    // }
+
+    &__heading{
+        color: $main-text;
+    }
+
+    &__sub-heading{
+        color: $main-text;
+        // font-size: 80%;
+    }
+}

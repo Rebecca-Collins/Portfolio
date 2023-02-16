@@ -1,46 +1,101 @@
 @use "../../styles/color" as *;
 @use "../../styles/responsive" as *;
 
-.navigation{
-    // rgb(39 4 58 / 93%);
+.navigation {
+  font-family: "Roboto Slab", serif;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  background-color: #37393e;
 
-    background-color: #330a33fc;
-    height: 70px;
+  &__container {
     display: flex;
-    @include tablet {
-        
-        justify-content: flex-end;
-        gap: 35px;
-        padding-right: 30px;
-        align-items: center;
+    justify-content: flex-end;
+    gap: 11px;
+    align-items: center;
+    border-bottom: 1px solid #a1a1a1;
+  }
+
+  &__links {
+    text-decoration: none;
+    color: $main-text;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20;
+    font-size: 17px;
+    padding-bottom: 4px;
+
+    @include desktop {
+      font-size: 24px;
     }
 
-    &__links{
-        @include mobile {
-            display: none;
-        }
-        @include tablet{
-            text-decoration: none;
-            color: $main-text;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            z-index: 20;
-            font-size: 20px;
-
-            @include desktop{
-                font-size: 24px;
-            }
-
-            &:hover{
-                // color: #330a33fc;
-                color: $secondary-text;
-                border-bottom: 3px solid $secondary-text;
-                padding-bottom: 4px;
-            }
-           
-        }
-           
+    &:hover {
+      color: $secondary-text;
+      border-bottom: 3px solid $secondary-text;
     }
+  }
 }
 
+.logo {
+  width: 30px;
+  height: 31px;
+  padding: 6px;
+  border-radius: 100%;
+  background-color: #9ec759;
+  transition: all 0.7s ease-in-out;
+  text-decoration: none;
+  color: $main-text;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+
+  font-size: 14px;
+
+  &:hover {
+    color: $secondary-text;
+    background-color: #f1f1f1;
+    transform: rotate(359deg);
+    transition: transform 0.5s ease-out;
+  }
+}
+
+.link {
+  width: 30px;
+  height: 31px;
+  padding: 7px;
+  border-radius: 100%;
+  background-color: #9ec759;
+  transition: all 0.7s ease-in-out;
+}
+
+.link svg {
+  transition: transform 0.5s ease-out;
+}
+
+.link:hover {
+  border-radius: 10%;
+  transform: rotate(405deg);
+}
+
+.link:hover svg {
+  transform: rotate(315deg);
+}
+
+.github:hover {
+  background: black;
+}
+
+.linkedin:hover {
+  background: #0a66c2;
+}
+
+.resume:hover {
+  background: #853b98;
+}
+
+.spin {
+  fill: $main-text;
+}

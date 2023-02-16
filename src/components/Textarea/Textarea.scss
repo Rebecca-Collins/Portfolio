@@ -1,0 +1,59 @@
+@use "../../styles/color" as *;
+@use "../../styles/responsive" as *;
+
+//---original---
+// .textarea {
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//   }
+  
+// .textarea__text-field {
+//     resize: none;
+//     border: none;
+//     border-bottom: 2px solid #333;
+//     font-size: inherit;
+//     background: none;
+//     color: #333;
+//     cursor: text;
+//     outline: 0;
+//     width: 100%;
+//     height: 100px;
+    
+//   }
+
+// .textarea__text-field--filled {
+//     border-bottom-color: $secondary-text;
+//     position: absolute;
+//     bottom: calc(-50px + (100px - 100%));
+//     // bottom: -50px;
+//     transition: bottom 0.2s ease-out;
+//   }
+
+// .textarea__text-field--focused {
+//     border-bottom-color: $secondary-text;
+//   }
+
+// .textarea__label img {
+//     position: absolute;
+//     bottom: 20px;
+//     transition: bottom 0.2s ease-out;
+//     width: 33px;
+//   }
+
+// .textarea__label {
+//     position: absolute;
+//     bottom: 50px;
+//     left: 0;
+//     transition: bottom 0.2s ease-out;
+//   }
+
+//   .textarea__text-field--filled + .textarea__label {
+//     bottom: 20px;
+// }
+
+// .textarea__text-field--focused + .textarea__label {
+//     bottom: 20px;
+// }
+//-------------
+

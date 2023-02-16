@@ -1,0 +1,147 @@
+@use "../../styles/color" as *;
+@use "../../styles/responsive" as *;
+
+// .field{
+//     // position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     background-color: transparent;
+//     opacity: 1;
+//     transform: translate(0px, 0px);
+//     bottom: 0;
+//     transition: bottom 0.2s ease-out;
+
+//     &__label{
+//         width: 40px;
+//         transition: bottom 0.2s ease-out;
+//     }
+
+//     &__input{
+//         border: none;
+//         border-bottom: 2px solid $main-text;
+//         font-size: inherit;
+//         background: none;
+//         color: $main-text;
+//         padding: 10px;
+//         font-weight: bold;
+//         cursor: text;
+//         outline: 0;
+//     }
+    
+// }
+
+// .field__label.focused {
+// bottom: -5px;
+// }
+
+
+
+// .field {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//   }
+  
+//   .field__label {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     transition: bottom 0.2s ease-out;
+//   }
+  
+//   .field__input {
+//     border: none;
+//     border-bottom: 2px solid #333;
+//     font-size: inherit;
+//     background: none;
+//     color: #333;
+//     padding: 10px;
+//     font-weight: bold;
+//     cursor: text;
+//     outline: 0;
+//   }
+  
+//   .field__label img {
+//     position: absolute;
+//     bottom: -5px;
+//     transition: bottom 0.2s ease-out;
+//     width: 33px;
+//   }
+  
+//   .field__label--focused {
+//     bottom: 20px;
+//   }
+
+// .field {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+  
+//   .field__input {
+//     border: none;
+//     border-bottom: 2px solid #333;
+//     font-size: inherit;
+//     background: none;
+//     color: #333;
+//     padding: 10px;
+//     font-weight: bold;
+//     cursor: text;
+//     outline: 0;
+//   }
+  
+//   .field__input--filled {
+//     border-bottom-color: $secondary-text;
+//     position: absolute;
+//     bottom: -50px;
+//     transition: bottom 0.2s ease-out;
+//   }
+  
+//   .field__input--focused {
+//     border-bottom-color: $secondary-text;
+//   }
+  
+//   .field__label img {
+//     position: absolute;
+//     bottom: 20px;
+//     transition: bottom 0.2s ease-out;
+//     width: 33px;
+//   }
+
+
+//   .field__label {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     transition: bottom 0.2s ease-out;
+//   }
+  
+//   .field__input--focused + .field__label {
+//     bottom: 15px;
+//   }
+  
+//   .field__input--filled + .field__label {
+//     bottom: 15px;
+//   }
+
+    
+//   .field__label {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     transition: bottom 0.2s ease-out;
+//   }
+  
+//   .field__label--focused {
+//     bottom: -25px;
+//   }
+// .field__input--focused + .field__label,
+// .field__input--filled + .field__label {
+//     bottom: calc(100% + 5px);
+// }
+
+// .field__input--focused + .field__label img,
+// .field__input--filled + .field__label img {
+//     bottom: 100%;
+// }
