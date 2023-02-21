@@ -105,8 +105,8 @@ function Contact() {
   };
 
   return (
-    <section className="contact background">
-      <div>
+    <section className="contact">
+      <div className="contact__heading-container">
       <h1 className="contact__heading">Get in Touch!</h1>
          <h3 className="contact__sub-heading">
           Let's Build Something Great Together!

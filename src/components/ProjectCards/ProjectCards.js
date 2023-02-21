@@ -7,7 +7,7 @@ function ProjectCards({
   image,
   projectText,
   projectContent,
-  projectTitle,
+  projectTitle
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,9 +25,9 @@ function ProjectCards({
       />
       {isOpen && (
         <div className="overlay open">
-          <div className="overlay__content">
-            <h1 className={`overlay__title ${projectName}`}>{projectTitle}</h1>
+          <div className="overlay__content"> 
             <p className="overlay__text">{projectText}</p>
+            <p className={`overlay__title ${projectName}`}>{projectTitle}</p>
             <p className="overlay__details">{projectContent}</p>
             <div className="overlay__button-container">
               <button

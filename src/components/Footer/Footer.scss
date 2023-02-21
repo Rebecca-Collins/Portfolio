@@ -2,37 +2,119 @@
 @use "../../styles/responsive" as *;
 @use "../../styles/mixins" as *;
 
+.footer {
+  font-family: "Roboto Slab", serif;
+  border-top: 1px solid #a1a1a1;
+  background-color: grey;
+  position: relative;
+  background-image: url("../../assets/images/texture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2.8125rem 0 3.75rem 9px;
 
+  &__container {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 
-
-.footer{
-    font-family: "Roboto Slab",serif;
-    border-top: 1px solid #a1a1a1;
-    // background-color: yellow;
-    background-color: grey;
-    position: relative;
+  &__inner {
     display: flex;
-    background-image: url("../../assets/images/texture.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 2.8125rem 0 3.75rem;
-    gap: 11px;
+    gap: 7px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    &__memoji{
-        height: 3.25rem; 
+  &__content{
+    display:flex;
+   
+  }
+
+  &__memoji {
+    width: 3.25rem;
+    padding-bottom: 7px;
+
+    @include tablet{
+        padding: 0;
     }
+  }
 
-    // &__content{
-    //     // margin-right: 15px;
-    // }
 
-    &__heading{
-        color: $main-text;
+ &__text-container{
+    max-width:300px;
+    display:flex;
+    flex-direction: column;
+    align-self: flex-end;
+ }
+
+  &__heading {
+    color: $main-text;
+  }
+
+  &__sub-heading {
+    color: $main-text;
+  }
+
+  &__icon-container {
+    display: flex;
+    gap: 7px;
+    margin-right: 10px;
+
+    @include tablet{
+        display: none;
     }
-
-    &__sub-heading{
-        color: $main-text;
-        // font-size: 80%;
-    }
+  }
+ 
 }
+
+.link {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 100%;
+    transition: all 0.7s ease-in-out;
+
+    @include tablet{
+        width: 35px;
+        height: 35px;
+    }
+  }
+
+.link svg {
+    transition: transform 0.5s ease-out;
+  }
+  
+  .link:hover {
+    border-radius: 10%;
+    transform: rotate(405deg);
+  }
+  
+  .link:hover svg {
+    transform: rotate(315deg);
+  }
+  
+  .github:hover {
+    background: black;
+  }
+  
+  .linkedin:hover {
+    background: #0a66c2;
+  }
+  
+  .resume:hover {
+    background: #853b98;
+  }
+  
+  .spin {
+    fill: $main-text;
+  
+    @include tablet {
+      display: flex;
+      width: 21px;
+      height: 20px;
+    }
+  }

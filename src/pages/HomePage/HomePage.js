@@ -1,118 +1,112 @@
 import "./HomePage.scss";
-import chevron from "../../assets/images/chevron.svg";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-// import Typewriter from "../../components/Typewriter/Typewriter";
-
-function Typewriter({ text }) {
-  const [displayWords, setDisplayWords] = useState([]);
-  const [currentIndex] = useState(0);
-
-  // THIS IS WORKING!
-  useEffect(() => {
-    const words = text.split(/\s+/);
-    const spans = words.reduce((acc, word) => {
-      if (word.length <= 8) {
-        // set a limit for word length
-        acc.push({ text: word, typedText: "" });
-      } else {
-        let currentWord = word;
-        while (currentWord.length > 0) {
-          let endIndex = Math.min(currentWord.length, 8); // set a limit for character count
-          acc.push({ text: currentWord.slice(0, endIndex), typedText: "" });
-          currentWord = currentWord.slice(endIndex);
-        }
-      }
-      return acc;
-    }, []);
-    setDisplayWords(spans);
-  }, [text]);
-
-  const isTypingComplete = currentIndex >= displayWords.length;
-
-  // check if displayWords is empty and return null until it is not
-  if (displayWords.length === 0) {
-    return null;
-  }
-  // ---------
-
-  return (
-    <h1 className="home__text typewriter">
-      {displayWords.map((span, index) => (
-        <span key={index}>
-          {span.typedText}
-          {index === currentIndex && !isTypingComplete && (
-            <span className="typewriter-cursor">Rebecca Collins.</span>
-          )}
-          {span.text.endsWith("\n") && <br />}
-        </span>
-      ))}
-    </h1>
-  );
-}
-
-// THIS IS WORKING----
-// return (
-//   <h1 className="home__text typewriter">
-//     {displayWords.map((span, index) => (
-//       <span key={index}>
-//         {span.typedText}
-//         {index === currentIndex && !isTypingComplete && <span>Rebecca Collins.</span>}
-//         {' '}
-//       </span>
-//     ))}
-//   </h1>
-// );
-// }
-// -------------
-
-// THIS WORKS
-//   const [displayText, setDisplayText] = useState(text);
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   useEffect(() => {
-//     if (currentIndex < text.length) {
-//       setTimeout(() => {
-//         setCurrentIndex(currentIndex + 1);
-//       }, 100);
-//     }
-//     setDisplayText(text.slice(0, currentIndex));
-//   }, [currentIndex, text]);
-
-//   return <h1 className="home__text typewriter">{displayText}</h1>;
-// }
+// import myIcon from "../../assets/images/portfolio-img.jpeg";
+// import myIcon from "../../assets/images/memoji.png";
+import Typewriter from "../../components/Typewriter/Typewriter";
+import axiosIcon from "../../assets/images/axios.svg";
+import express from "../../assets/images/express.png";
+import knex from "../../assets/images/knex.svg";
+import sass from "../../assets/images/sass.png";
+import node from "../../assets/images/node.png";
+import mysql from "../../assets/images/mysql.png";
+import javascript from "../../assets/images/javascript.png";
+import reactIcon from "../../assets/images/reactIcon.png";
+import html5 from "../../assets/images/html5.png";
+// import { FaReact } from "react-icons/fa";
+// import { GrMysql } from "react-icons/gr";
+// import { DiJavascript1 } from "react-icons/di";
+// import { DiHtml5 } from "react-icons/di";
+// import { FaSass } from "react-icons/fa";
+// import { FaNodeJs } from "react-icons/fa";
+// import { FaSass } from "react-icons/fa";
 
 function HomePage() {
-  // const [text] = useState("Rebecca Collins.");
-
   return (
     <main className="home">
-      {/* <main className="home background"> */}
-      <div className="home__text-container">
-        <Typewriter text="Rebecca Collins." />
-
-        <div className="home__subheading-container">
+      <div className="home__container">
+        <div className="home__heading-container">
+          <div className="home__text-typewriter">
+            <Typewriter text="Rebecca Collins." />
+          </div>
           <h3 className="home__subheading">Full-Stack Web Developer</h3>
+        </div>
+        <div className=" home__memoji">
+        </div>
+       
+        <div className="home__subheading-container">
           <p className="home__paragraph">
-            I stay current with industry trends and use cutting-edge technologies to
-            bring your brand to life. Dedicated to exceptional results, whether
-            creating a modern website or complex software. Let's shape the
-            future and give your brand a competitive edge.{" "}
+            I stay current with industry trends and use cutting-edge
+            technologies to bring your brand to life. Dedicated to exceptional
+            results, whether creating a modern website or complex software.
+            Let's shape the future and give your brand a competitive edge.
           </p>
-
-          <Link className="home__link">
-            {" "}
-            Learn More{" "}
+          {/* <div className=""> */}
+          <p className="home__paragraph">
+            I am dedicated to delivering high-quality work and making a positive
+            impact through my skills and expertise. In my free time, I enjoy
+            playing soccer, volunteering and keeping up with the latest
+            technology advancements. I am looking for a company that shares my
+            passion for innovation and problem-solving.
+            {/* In my free time, I play soccer and stay up to date with technology
+            advancements. I am a dedicated and driven individual, and I am
+            seeking a company that shares my passion for innovation and
+            problem-solving. */}
+          </p>
+        </div>
+        <section className="home__skills-container">
+        <h2 className="home__skill-heading">Skills</h2>
+        <div className="home__icon-content">
+          <div className="home__icon-container">
+            <img className="home__icon" 
+            src={axiosIcon} alt="axios icon" />
+          </div>
+          <div className="home__icon-container">
+            <img className="home__icon" 
+            src={express} alt="express icon" />
+          </div>
+          <div className="home__icon-container">
+            <img className="home__icon" 
+            src={knex} alt="knex icon" />
+          </div>
+          <div className="home__icon-container">
+            <img className="home__icon" 
+            src={sass} alt="sass icon" />
+          </div>
+          <div className="home__icon-container">
+            <img className="home__icon" 
+            src={reactIcon} alt="react icon" />
+          </div>
+          <div className="home__icon-container">
+            <img className="home__icon" 
+            src={node} alt="node.js icon" />
+          </div>
+          <div className="home__icon-container">
+            <img className="home__icon" 
+            src={mysql} alt="mysql icon" />
+          </div>
+          <div className="home__icon-container">
             <img
-              className="home__chevron-img"
-              src={chevron}
-              alt="right arrow"
-            />{" "}
+              className="home__icon"
+              src={javascript}
+              alt="javascript icon"
+            />
+          </div>
+          <div className="home__icon-container">
+            <img className="home__icon" src={html5} alt="html5 icon" />
+          </div>
+        </div>
+        </section>
+       
+
+        {/* </div> */}
+        <div className="home__link-container">
+          <Link className="home__contact-link" to="/contact">
+            Get In Touch
+          </Link>
+          <Link className="home__link" to="/about">
+            Learn More
           </Link>
         </div>
-      </div>
-      <div>
-        <Link className="home__contact-link" to="/contact">Get in touch</Link>
       </div>
     </main>
   );

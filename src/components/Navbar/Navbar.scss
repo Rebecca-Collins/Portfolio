@@ -6,15 +6,63 @@
   height: 70px;
   display: flex;
   justify-content: space-evenly;
-  position: relative;
+  // position: relative;
   background-color: #37393e;
 
   &__container {
     display: flex;
-    justify-content: flex-end;
-    gap: 11px;
+    justify-content: space-evenly;
+    gap: 15px;
     align-items: center;
     border-bottom: 1px solid #a1a1a1;
+    width: 930px;
+    margin: 0 22px;
+
+    @include tablet {
+      gap: 29px;
+    }
+  }
+
+  &__logo {
+    width: 29px;
+    height: 29px;
+    padding: 5px;
+    transition: all 0.7s ease-in-out;
+    text-decoration: none;
+    color: $main-text;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #9ec759;
+    font-size: 14px;
+    border-radius: 2px;
+
+    &:hover {
+      color: $secondary-text;
+      background-color: $main-text;
+      transform: rotate(360deg);
+      transition: transform 0.5s ease-out;
+    }
+  }
+
+  &__link-container {
+    display: flex;
+    gap: 14px;
+    flex-grow: 1;
+
+    @include tablet{
+      gap: 29px;
+    }
+  }
+
+  &__icon-container {
+    // display:none;
+
+    // @include tablet{
+      display: flex;
+      gap: 7px;
+    // }
+   
   }
 
   &__links {
@@ -27,48 +75,37 @@
     font-size: 17px;
     padding-bottom: 4px;
 
+    @include tablet {
+      font-size: 21px;
+    }
+
     @include desktop {
       font-size: 24px;
     }
 
     &:hover {
       color: $secondary-text;
-      border-bottom: 3px solid $secondary-text;
+      border-bottom: 2px solid $secondary-text;
     }
   }
 }
 
-.logo {
-  width: 30px;
-  height: 31px;
-  padding: 6px;
-  border-radius: 100%;
-  background-color: #9ec759;
-  transition: all 0.7s ease-in-out;
-  text-decoration: none;
-  color: $main-text;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  z-index: 20;
-
-  font-size: 14px;
-
-  &:hover {
-    color: $secondary-text;
-    background-color: #f1f1f1;
-    transform: rotate(359deg);
-    transition: transform 0.5s ease-out;
-  }
+.active {
+  border-bottom: 2px solid $secondary-text;
 }
 
 .link {
+  cursor: pointer;
   width: 30px;
-  height: 31px;
+  height: 30px;
   padding: 7px;
   border-radius: 100%;
-  background-color: #9ec759;
   transition: all 0.7s ease-in-out;
+
+  @include tablet {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .link svg {
@@ -98,4 +135,10 @@
 
 .spin {
   fill: $main-text;
+
+  @include tablet {
+    display: flex;
+    width: 21px;
+    height: 20px;
+  }
 }

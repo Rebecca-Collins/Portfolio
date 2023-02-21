@@ -2,77 +2,10 @@
 @use "../../styles/responsive" as *;
 @use "../../styles/mixins" as *;
 
-// .background{
-//   height: 100vh;
-//     width: 100vw;
-//     background-color: rgb(0 0 0);
-//     position: relative;
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       background-color: rgb(0 0 0 / 66%);
-//       background-image: linear-gradient(
-//         to top,
-//         rgb(102 51 153 / 23%),
-//         transparent
-//       );
-//       height: calc(100% + 100vh); /* adjusts the height of the pseudo-element */
-//       width: 100%;
-//     }
-// }
 
 .about {
-  // @include background-image;
-
-
-  // overflow-x: hidden;
-  // background-image: url("../../assets/images/portfolio-img.jpeg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // height: 100vh;
-  // width: 100vw;
-  // background-position-x: 0%;
-  // background-color: rgb(0 0 0);
-  // position: relative;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   background-color: rgb(0 0 0 / 81%);
-  //   background-image: linear-gradient(
-  //     to top,
-  //     rgb(102 51 153 / 23%),
-  //     transparent
-  //   );
-  //   height: calc(100% + 100vh); /* adjusts the height of the pseudo-element */
-  //   width: 100%;
-  // }
-
-
-
-
-
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   background-color: rgb(0 0 0 / 71%);
-  //   background-image: radial-gradient(
-  //     circle at top left,
-  //     rgb(102 51 153 / 36%),
-  //     transparent
-  //   );
-  //   height: 100vh;
-  //   width: 100%;
-  // }
+  font-family: "Roboto Slab", serif;
+  background-color: #37393e;
 
   &__heading{
     color: $secondary-text;
@@ -89,7 +22,7 @@
     flex-direction: column;
     gap: 15px;
     position: relative;
-    margin-bottom: 10px;
+    
   }
 
   &__text-content {

@@ -2,120 +2,77 @@
 @use "../../styles/responsive" as *;
 @use "../../styles/mixins" as *;
 
-// .background{
-//   height: 100vh;
-//     width: 100vw;
-//     background-color: rgb(85 47 115);
-//     position: relative;
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       background-color: rgba(0, 0, 0, 0.66);
-//       background-image: linear-gradient(to top, #37393e, transparent); 
-//       height: 100vh;
-//       width: 100%;
-//     }
-// }
-
-// .background{
-//   height: 100vh;
-//     width: 100vw;
-//     background-color: rgb(0 0 0);
-//     position: relative;
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       background-color: rgb(0 0 0 / 66%);
-//       background-image: linear-gradient(
-//         to top,
-//         rgb(102 51 153 / 23%),
-//         transparent
-//       );
-//       height: calc(100% + 100vh); /* adjusts the height of the pseudo-element */
-//       width: 100%;
-//     }
-// }
-
 .contact {
-  font-family: "Roboto Slab",serif;
+  font-family: "Roboto Slab", serif;
+  background-color: #37393e;
+  padding-bottom: 7.5rem;
   // height: 100vh;
-  //   width: 100vw;
-  //   background-color: rgb(0 0 0);
-  //   position: relative;
 
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     background-color: rgb(0 0 0 / 66%);
-  //     background-image: linear-gradient(
-  //       to top,
-  //       rgb(102 51 153 / 23%),
-  //       transparent
-  //     );
-  //     // height: calc(100% + 100vh); /* adjusts the height of the pseudo-element */
-  //     width: 100%;
-  //   }
-  // @include background-image;
+  @include tablet{
+    // height: 70vh;
+  }
+  
 
-  &__heading-container{
+  &__heading-container {
+    padding: 16px 22px;
     margin: auto;
-    width: 250px;
-    padding-top: 16px;
+    max-width: 420px;
   }
 
   &__heading {
+    font-family: "Muli", sans-serif;
     color: $main-text;
-    position: relative;
   }
 
-  &__sub-heading{
+  &__sub-heading {
+    font-family: "Muli", sans-serif;
     color: $main-text;
-    position: relative;
     margin-top: 8px;
   }
 
   &__form {
-    position: relative;
-    width: 250px;
+    max-width: 450px;
     margin: auto;
-    padding-top: 48px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    //    border: 3px solid $secondary-text;
+    gap: 26px;
+    padding: 48px 22px 0 22px;
   }
 
-  &__input{
+  &__input {
+    font-family: "Muli", sans-serif;
     border: none;
-    border-bottom: 2px solid $secondary-text;
+    border-bottom: 2px solid #9ec75940;
     font-size: inherit;
     background: none;
-    color: #333;
+    color: $main-text;
     padding: 10px;
     font-weight: bold;
     cursor: text;
     outline: 0;
+
+    &::placeholder {
+      color: #69756a;
+    }
   }
 
-  &__textarea{
+  &__textarea {
+    font-family: "Muli", sans-serif;
     resize: none;
     border: none;
-    border-bottom: 2px solid $secondary-text;
+    border-bottom: 2px solid #9ec75940;
     font-size: inherit;
     background: none;
-    color: #333;
+    color: $main-text;
     padding: 10px;
     font-weight: bold;
     cursor: text;
     outline: 0;
+    position: relative;
+
+    &::placeholder {
+      color: #69756a;
+    }
   }
 
   &__button {
@@ -127,12 +84,23 @@
     background-color: $secondary-text;
     color: $main-text;
     cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: #4f525b;
+    }
+
+    @include tablet {
+      width: 85px;
+      height: 33px;
+      font-size: 16px;
+    }
   }
 
-//   &__success {
-//     color: $main-text;
-//     position: relative;
-//   }
+  //   &__success {
+  //     color: $main-text;
+  //     position: relative;
+  //   }
 
   &__error {
     color: #f44336;
