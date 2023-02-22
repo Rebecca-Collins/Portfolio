@@ -1,7 +1,5 @@
 import "./HomePage.scss";
 import { Link } from "react-router-dom";
-// import myIcon from "../../assets/images/portfolio-img.jpeg";
-// import myIcon from "../../assets/images/memoji.png";
 import Typewriter from "../../components/Typewriter/Typewriter";
 import axiosIcon from "../../assets/images/axios.svg";
 import express from "../../assets/images/express.png";
@@ -12,13 +10,7 @@ import mysql from "../../assets/images/mysql.png";
 import javascript from "../../assets/images/javascript.png";
 import reactIcon from "../../assets/images/reactIcon.png";
 import html5 from "../../assets/images/html5.png";
-// import { FaReact } from "react-icons/fa";
-// import { GrMysql } from "react-icons/gr";
-// import { DiJavascript1 } from "react-icons/di";
-// import { DiHtml5 } from "react-icons/di";
-// import { FaSass } from "react-icons/fa";
-// import { FaNodeJs } from "react-icons/fa";
-// import { FaSass } from "react-icons/fa";
+
 
 function HomePage() {
   return (
@@ -40,17 +32,12 @@ function HomePage() {
             results, whether creating a modern website or complex software.
             Let's shape the future and give your brand a competitive edge.
           </p>
-          {/* <div className=""> */}
           <p className="home__paragraph">
             I am dedicated to delivering high-quality work and making a positive
             impact through my skills and expertise. In my free time, I enjoy
             playing soccer, volunteering and keeping up with the latest
             technology advancements. I am looking for a company that shares my
             passion for innovation and problem-solving.
-            {/* In my free time, I play soccer and stay up to date with technology
-            advancements. I am a dedicated and driven individual, and I am
-            seeking a company that shares my passion for innovation and
-            problem-solving. */}
           </p>
         </div>
         <section className="home__skills-container">
