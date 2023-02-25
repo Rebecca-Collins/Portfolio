@@ -1,0 +1,87 @@
+@use "../../styles/color" as *;
+@use "../../styles/responsive" as *;
+@use "../../styles/mixins" as *;
+
+
+// .skills {
+   
+// }
+
+.skills img {
+    height: 63px;
+    background-color: #bde973;
+    // #bee77a;
+    padding: 8px;
+    border-radius: 50%;
+    // box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    // background-color: #a9a9a926;
+    // background-color: #a9a9a926;
+    // border-radius: 2px;
+    // background-color: rgba(255, 255, 255, 0.5);
+    // padding: 5px; /* Add some padding to the icons */
+    // border-radius: 31%;
+    
+}
+
+.skills h2 {
+    border-bottom: 1px solid #4caf5045;
+    font-size: 24px;
+    width: 154px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    color: $main-text;
+    padding-top: 22px;
+    text-shadow: 0 0 3px #9ec759;
+
+    @include tablet{
+        font-size: 36px;
+        
+    }
+}
+
+
+
+.skills__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* This creates two columns with equal width */
+    grid-gap: 10px; /* This adds a 10px gap between grid items */
+    max-width: 186px;
+    margin: auto;
+    padding: 25px 0 0 21px;
+
+    @include tablet{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 41px;
+        max-width: 1280px;
+    }
+    // padding-top: 25px;
+    // padding-left: 21px;
+}
+
+
+
+figcaption{
+    color: $faded-main-text;
+    text-align: center;
+    padding-right: 17px;
+    font-size: 16px;
+
+    @include tablet{
+    margin-left: 9px;
+    padding-top: 6px;
+    padding-right:0;
+    text-align: inherit;
+    }
+    // text-shadow: 0 0 3px #fff;
+}
+
+
+// .skillsIcons {
+//     display: grid;
+//     justify-content: space-around;
+//     width: 100%;
+//     text-align: center;
+//     margin: 20px 0;
+// }

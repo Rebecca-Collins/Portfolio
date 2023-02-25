@@ -19,7 +19,7 @@
   }
   to {
     @include tablet {
-      width: 358px;
+      width: 22.375rem;
     }
   }
 }
@@ -40,20 +40,12 @@
   background-color: #37393e;
   position: relative;
   padding-bottom: 3.5rem;
-  @include tablet {
-    // height: 74vh;
-  }
+ 
 
-  @include desktop {
-    height: none;
-  }
-  // height: 100vh;
-  // width: 100vw;
-  // position: relative;
+ 
   &__memoji-container {
     display: flex;
     justify-content: center;
-   
   }
 
   &__memoji {
@@ -62,167 +54,118 @@
     background-position: center;
     background-size: cover;
     background-position-y: 50%;
-    width: 115px;
-    height: 115px;
-    margin: 8px auto;
+    width: 7.1875rem;
+    height: 7.1875rem;
+    margin: 0.5rem auto;
     border-radius: 50%;
     border: 1px solid $secondary-text;
 
     @include tablet {
       position: absolute;
-      top: 14px;
+      top: 0.875rem;
+      background-position-y: 40%;
+      width: 10.1875rem;
+      height: 10.1875rem;
     }
   }
 
   &__container {
-    // padding: 20px 0 0 0;
-    // margin: 0 18px;
-    padding: 41px 14px 19px;
+    padding: 2.5625rem 0.875rem 1.1875rem;
     opacity: 1;
     transition: opacity 0.5s;
-    max-width: 712px;
+    max-width: 44.5rem;
     margin: auto;
-    // height: 70vh;
 
     @include tablet {
-      padding: 41px 19px 19px;
-      // padding: 41px 0 0 0;
+      padding: 2.5625rem 1.1875rem 1.1875rem;
     }
   }
 
   &__heading-container {
-    width: 280px;
+    width: 17.5rem;
     margin: auto;
 
     @include tablet {
-      width: 400px;
-      padding-bottom: 30px;
+      width: 25rem;
+      padding-bottom: 6.25rem;
     }
   }
 
   &__text-typewriter {
     display: flex;
     justify-content: center;
+
+    @include tablet{
+      margin-left: 32px;
+    }
+    
   }
 
   &__text {
     color: $secondary-text;
-    font-size: 27px;
+    font-size: 1.6875rem;
     font-weight: 400;
-    width: 273px;
-    margin-left: 8px;
+    width: 17.0625rem;
+    margin-left: 0.5rem;
     font-family: "Muli", sans-serif;
 
     @include tablet {
-      width: 358px;
-      font-size: 36px;
+      width: 22.375rem;
+      font-size: 2.25rem;
     }
   }
 
   &__subheading-container {
-    margin-top: 6px;
+    margin-top: 0.375rem;
     display: flex;
     flex-direction: column;
-    gap: 28px;
 
     @include tablet {
-      gap: 35px;
-      width: 689px;
+      gap: 0.1875rem;
+      width: 43.0625rem;
       margin: auto;
     }
-    // padding-bottom: 10px;
   }
 
   &__subheading {
     color: $main-text;
     font-family: "Muli", sans-serif;
-    // position: relative;
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 300;
-    padding-top: 5px;
-    margin-left: 19px;
+    padding-top: 0.3125rem;
+    margin-left: 1.1875rem;
 
     @include tablet {
       text-align: center;
-      margin: 0;
+      margin-left: 2.1875rem;
     }
   }
 
   &__paragraph {
-    color: #f9f9f9;
-    // position: relative;
-    font-size: 18px;
-    line-height: 25px;
-    margin-left: 10px;
+    color: $main-text;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    margin-left: 0.625rem;
+    padding-top: 15px;
 
     @include tablet {
       line-height: 28px;
     }
   }
 
-  &__skills-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  &__skill-heading {
-    color: $secondary-text;
-    padding: 10px 0;
-    font-family: "Muli", sans-serif;
-    margin-left: 10px;
-    font-weight: 400;
-  }
-
-  &__icon-content {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    max-width: 307px;
-
-    @include tablet {
-      justify-content: flex-start;
-      margin-left: 7px;
-      max-width:1280px;
-    }
-  }
-
-  &__icon-container {
-    display: flex;
-    height: 41px;
-  }
-
-  &__icon {
-    width: 100%;
-  }
 
   &__link-container {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     gap: 45px;
     padding-top: 63px;
     margin-left: 11px;
-  }
 
-  &__contact-link {
-    text-decoration: none;
-    color: $main-text;
-    cursor: pointer;
-    padding: 0.5em 0.75em;
-    background-color: #40444b;
-    border-radius: 2px;
-    box-shadow: 0 4px 16px -4px rgb(0 0 0 / 71%),
-      0 1px 4px -1px rgb(0 0 0 / 14%);
-
-    @include tablet {
-      padding: 15px 21px 15px 21px;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-      background-color: #4f525b;
+    @include tablet{
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 0;
     }
   }
 
@@ -231,14 +174,18 @@
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    padding: 0.5em 0.75em;
+    padding: 0.8em 0.9em;
     background-color: #40444b;
-    border-radius: 2px;
+    border-radius: 3px;
     box-shadow: 0 4px 16px -4px rgb(0 0 0 / 71%),
       0 1px 4px -1px rgb(0 0 0 / 14%);
+      width: 119px;
+      text-align: center;
+      align-self: center;
 
     @include tablet {
       padding: 15px 21px 15px 21px;
+      width: 131px;
     }
 
     &:hover {
@@ -253,9 +200,4 @@
     top: -2px;
     left: 77px;
   }
-}
-
-.icon-size {
-  width: 200px;
-  height: 200px;
 }

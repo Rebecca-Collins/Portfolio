@@ -19,5 +19,42 @@
 
 body {
     overflow-x: hidden;
-    
+    scroll-behavior: smooth;
 }
+
+
+
+// .fade-in, .fade-inLonger {
+//     opacity: 0;
+// }
+
+// .fade-in, .fade-inLonger, .appear {
+//     transition: opacity 1s ease-in-out;
+// }
+
+// .appear {
+//     opacity: 1;
+// }
+
+// @keyframes fadein {
+//     from { opacity: 0; }
+//     to { opacity: 1; }
+// }
+
+// .fade-in {
+//     opacity: 0;
+//     transition: opacity 1s ease-in;
+// }
+// .fade-inLonger {
+//     opacity: 0;
+//     transition: opacity 2s ease-in
+// }
+
+// .appear {
+//     opacity: 1;
+// }
+
+// @keyframes fadein {
+//     from { opacity: 0; }
+//     to   { opacity: 1; }
+// }
