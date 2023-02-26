@@ -144,12 +144,12 @@
   &__paragraph {
     color: $main-text;
     font-size: 1.125rem;
-    line-height: 1.5625rem;
+    line-height: 1.8125rem;
     margin-left: 0.625rem;
     padding-top: 15px;
 
     @include tablet {
-      line-height: 28px;
+      line-height: 29px;
     }
   }
 
@@ -199,5 +199,9 @@
     width: 26px;
     top: -2px;
     left: 77px;
+  }
+
+  &__highlight-text{
+    color: #59C7B9;
   }
 }

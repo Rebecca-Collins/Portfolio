@@ -4,8 +4,8 @@
 
 .footer {
   font-family: "Roboto Slab", serif;
-  border-top: 1px solid #4caf5045;
-  background-color: grey;
+  border-top: 1px solid $border-bottom;
+  background-color: $footer-background;
   position: relative;
   background-image: url("../../assets/images/texture.png");
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 
   &__inner {
     display: flex;
-    gap: 7px;
+    gap: .4375rem;
     justify-content: space-between;
     align-items: center;
     max-width: 930px;
