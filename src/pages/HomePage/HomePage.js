@@ -54,9 +54,6 @@ function HomePage() {
           <Link className="home__link" to="/contact">
             Get In Touch
           </Link>
-          <Link className="home__link" to="/about">
-            Learn More
-          </Link>
         </div>
       </div>
     </main>

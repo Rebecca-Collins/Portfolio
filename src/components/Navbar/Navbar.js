@@ -21,40 +21,6 @@ const handleResumeButton = () => {
   );
 };
 
-// function Navbar() {
-//   return (
-//     <header className="navigation">
-//       <nav className="navigation__container">
-//       <Link className="navigation__logo" to="/">
-//           RC
-//         </Link>
-//         <div className="navigation__link-container">       
-//         <Link className="navigation__links" to="/projects">
-//           Portfolio
-//         </Link>
-//         <Link className="navigation__links" to="/contact">
-//           Connect
-//         </Link>
-//         </div>
-//         <div className="navigation__icon-container">
-//           <div className="link github">
-//             <FaGithub className="spin" onClick={handleViewButtonClick} />
-//           </div>
-//           <div className="link linkedin">
-//             <FaLinkedinIn className="spin" onClick={handleLinkButton} />
-//           </div>
-//           <div className="link resume">
-//             <FaWpforms className="spin" onClick={handleResumeButton} />
-//           </div>
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// }
-
-// export default Navbar;
-
-
 function Navbar() {
   const location = useLocation();
 
@@ -73,9 +39,6 @@ function Navbar() {
             Connect
           </Link>
 
-          {/* <Link className={`navigation__links ${location.pathname === '/about' ? 'active' : ''}`} to="/about">
-          About
-          </Link> */}
         </div>
   
         <div className="navigation__icon-container">
